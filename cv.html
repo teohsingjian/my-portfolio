@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Teoh Sing Jian</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'ITC Avant Garde Gothic', Arial, sans-serif;
+            background: url('Image/Galaxy.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #BBE1FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .cv-container {
+            width: 80%;
+            height: 90%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cv-container">
+            <!-- Embed the PDF file here -->
+            <iframe src="Image/CV_TeohSingJian.pdf" type="application/pdf">
+                Your browser does not support iframes. You can download the PDF here:
+                <a href="Image/CV_TeohSingJian.pdf">Download CV</a>
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Let's Connect:</p>
+            <ul class="footer-list">
+                <li><a href="https://www.linkedin.com/in/teoh-sing-jian-0b88b51b3/" target="_blank"><img src="Image/Linkedin.png" alt="LinkedIn" class="footer-icon"></a></li>
+                <li><a href="https://www.instagram.com/teohsingjian/?hl=en" target="_blank"><img src="Image/Instagram.png" alt="Instagram" class="footer-icon"></a></li>
+                <li><a href="mailto:teohsingjian02@gmail.com"><img src="Image/Email.png" alt="Email" class="footer-icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

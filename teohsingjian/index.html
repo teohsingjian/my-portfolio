@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoh Sing Jian</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'ITC Avant Garde Gothic';
+            src: url('ITC-Avant-Garde-Gothic.woff2') format('woff2'),
+                 url('ITC-Avant-Garde-Gothic.woff') format('woff');
+        }
+    </style>
+</head>
+<body>
+    <header class="animated-header slide-down">
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#cv">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="landing-page fade-in">
+            <iframe src='https://my.spline.design/interfaceii-57ea4fbb0c94c8ebed23be373448ca5e/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container slide-up">
+            <p>Let's Connect:</p>
+            <ul class="footer-list">
+                <li><a href="https://www.linkedin.com/in/teoh-sing-jian-0b88b51b3/" target="_blank"><img src="Image/Linkedin.png" alt="LinkedIn" class="footer-icon"></a></li>
+                <li><a href="https://www.instagram.com/teohsingjian/?hl=en" target="_blank"><img src="Image/Instagram.png" alt="Instagram" class="footer-icon"></a></li>
+                <li><a href="mailto:teohsingjian02@gmail.com"><img src="Image/Email.png" alt="Email" class="footer-icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'ITC Avant Garde Gothic', Arial, sans-serif;
+            background: url('Image/Galaxy.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #BBE1FA;
+        }
+
+        header.animated-header {
+            
+            
+            
+            display: flex;
+            align-items: center;
+            padding: 60px 20px 20px;
+                        width: 100%;
+            animation: headerSlide 1.5s ease-in-out;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        
+        @keyframes headerSlide {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #3a0d54, #5c2674);
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFFFFF;
+            background: #5c2674;
+        }
+
+        .landing-page {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        footer {
+            
+            
+            
+            
+            
+            
+            
+            
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            
+            padding: 10px 20px;
+            width: 35%;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .footer-container {
+            color: #BBE1FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .footer-container ul li {
+            margin: 0 15px;
+        }
+
+        .footer-container ul li a {
+            color: #BBE1FA;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .footer-container ul li a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</body>
+</html>
